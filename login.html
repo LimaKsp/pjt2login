@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body onresize="mudarTamanho()">
+    <nav class="nav1">
+        <div class="logo" id="div-abrir">
+            <span id="burguer" class="material-symbols-outlined" onclick="abrir()"><img src="menu.png"
+                    alt=""></span>
+        </div>
+
+        <div class="topicos" id="itens">
+            <a href="">
+                <p>HOME</p>
+            </a>
+            <a href="">
+                <p>SOBRE NÓS</p>
+            </a>
+            <a href="">
+                <p>CONTATO</p>
+            </a>
+        </div>
+
+        <div class="botoes">
+            <button id="botao1">CADASTRO</button>
+            <button id="botao2">LOGIN</button>
+        </div>
+    </nav>
+    <main class="main-login">
+       <div class="left-login">
+        <h1>Faça Login<br>e começe a programar agora!
+            <img src="earth-and-moon-animate.svg" class="left-login-image" alt="crianças">
+        </h1>
+       </div>
+
+       <div class="right-login">
+        <div class="card-login">
+            <h1>LOGIN</h1>
+            <div class="textfield">
+                <label for="Email">Email</label>
+                <input type="text" name="Email" placeholder="Email">
+            </div>
+            <div class="textfield">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" placeholder="Senha">
+                <a href="" >Esqueceu sua Senha?</a>
+            </div>
+            <button class="btn-login">ENTRAR</button>
+        </div>
+       </div>
+
+    </main>
+    <script src="login.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

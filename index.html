@@ -12,16 +12,16 @@
 <body onresize="mudarTamanho()">
     <nav class="nav1">
         <div class="logo" id="div-abrir">
-            <span id="burguer" class="material-symbols-outlined" onclick="abrir()"><img src="menu.png"
-                    alt=""></span>
+            <span id="burguer" class="material-symbols-outlined" onclick="abrir()"><img src="menu.png" alt=""
+                    id="imagemTroca"></span>
         </div>
 
         <div class="topicos" id="itens">
-            <a href="">
+            <a href="index.html">
                 <p>HOME</p>
             </a>
             <a href="">
-                <p>SOBRE NÓS</p>
+                <p>SOBRE</p>
             </a>
             <a href="">
                 <p>CONTATO</p>
@@ -34,52 +34,46 @@
         </div>
     </nav>
     <main class="main-login">
-       <div class="left-login">
-        <h1>Faça Login<br>e começe a programar agora!
-            <img src="earth-and-moon-animate.svg" class="left-login-image" alt="crianças">
-        </h1>
-       </div>
-
-       <div class="right-login">
-        <div class="card-login">
-            <h1>LOGIN</h1>
-            <div class="textfield">
-                <label for="Email">Email</label>
-                <input type="text" name="Email" placeholder="Email">
+        <div class="left-login">
+            <div class="lefttxt">
+                <h1>Faça Login<br>e começe a programar agora!</h1>
             </div>
-            <div class="textfield">
-                <label for="senha">Senha</label>
-                <input type="password" name="senha" placeholder="Senha">
-                <a href="" >Esqueceu sua Senha?</a>
-            </div>
-            <button class="btn-login">ENTRAR</button>
         </div>
-       </div>
 
+        <div class="right-login">
+            <div class="card-login">
+                <h1>LOGIN</h1>
+                <form name="myform" method="post" onsubmit=" return validateform()">
+                <div class="textfield">
+                    <label for="Email">Email</label>
+                    <input type="text" name="Emailt" required placeholder="Email" id="Email">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Senha" id="password">
+                </div>
+                <button class="btn-login" type="submit" onclick="validateform()" >ENTRAR</button>
+            </form>
+      
+                <a href="">Esqueceu sua Senha?</a>
+                <a>OU</a>
+                <a href="">Cadastre-se!</a>
+            </div>
+        </div>
     </main>
+    <!-- <footer>
+        <div class="lftsd">
+            <p> Olá </p>
+        </div>
+        <div class="cntsd">
+            <p> Olá </p>>
+        </div>
+        <div class="rgtsd">
+            <p> Olá </p>
+        </div>
+    </footer> -->
+
     <script src="login.js"></script>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </html>
